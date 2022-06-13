@@ -27,7 +27,7 @@
 
 .site-title {
     width: 100%;
-    height: 150px;
+    height: 75px;
     background-color: Black;
     color: white;
     display: flex;
@@ -108,7 +108,7 @@
 
 .main {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     background: url("Resimler/bacground.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@
 
 .resume {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@
 
 .lessons {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +280,7 @@
 
 .cv {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +295,7 @@
 
 .contact {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     background-color: black;
@@ -427,7 +427,7 @@
 
 .projects {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,7 +578,7 @@
 
 .examples {
     width: 100%;
-    height: calc(100vh - 150px - 60px - 90px);
+    height: calc(100vh - 75px - 60px - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,7 +645,7 @@
 
 footer {
     width: 100%;
-    height: 90px;
+    height: 50px;
     background-color: Black;
     position: absolute;
     bottom: 0;
@@ -666,14 +666,26 @@ footer p a{
         font-size: 14px;
     }
 
-    .list-lessons .row{
-        width: 100%;
-        height: 50%;
+    .list-lessons .row .col{
+        width: 12%;
+    }  
+    
+    .main-content {
+        height: 200px;
     }
 
-    .list-lessons .row .col{
-        width: 13%;
-    }   
+    .main-content .main-ingredient{
+        width: 90%;
+    }
+
+    .main-content .main-ingredient p{
+        width: 100%;
+    }
+
+    .main-content .main-ingredient p, 
+    .main-content .main-ingredient a {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width:1300px) {
@@ -694,11 +706,6 @@ footer p a{
         align-items: center;
         justify-content: center;
     }
-    
-    .main-content .main-ingredient p, 
-    .main-content .main-ingredient a {
-        margin: 10px 0;
-    }
 }
 
 @media (max-width:1200px) {
@@ -706,4 +713,3 @@ footer p a{
         font-size: 16px;
     }
 }
-
